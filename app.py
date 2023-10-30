@@ -30,7 +30,8 @@ def get_weatherdata():
         }
     response = requests.get(url,params=param)
     data = response.json()
-    return f"data : {data}"
+    city=data['name']
+    return f"data : {data},'city' : {city}"
 
 if __name__ == '__main__':
     app.run(host= "0.0.0.0" , port = 5000)  # it is not necessary to give port no here 
