@@ -1,0 +1,11 @@
+#it is used to keep all the dependencies
+
+#this is used for bulk installation of libraries 
+
+# always take latest version for better experience
+
+
+#  but without verision we can also use this 
+flask   # this is verision 
+gunicorn
+requests
