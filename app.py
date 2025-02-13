@@ -10,7 +10,7 @@ from flask import Flask , render_template,request
 import  requests
 
 
-app = Flask(__name__)
+app = Flask(__name__)    # building flask app 
 
 @app.route('/')
 def homepage():
@@ -21,7 +21,7 @@ def homepage():
 # METHODS SHOULD ALWAYS in [] 
 
 def get_weatherdata():
-    url = "https://api.openweathermap.org/data/2.5/weather"
+    url = "https://api.openweathermap.org/data/2.5/weather"   # url 
 
     param = {
         'q':request.form.get("city"),
@@ -44,3 +44,12 @@ if __name__ == '__main__':
 
 #we use ls for list itemls
 # git add. use krenge second me 
+
+
+
+# to get api login into openweather.org and get ur 1 free api 
+
+
+# my api key is 303d4ecf68a802f9bd137959c588fcdc
+# 44afc7b8f68381907006f5008180fd3d
+# for unit type metric
