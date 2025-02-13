@@ -16,7 +16,7 @@ app = Flask(__name__)    # building flask app
 def homepage():
     return render_template("index.html")
 
-@app.route("/weatherapp",methods=["POST", "GET"])   # this meANS OK WORK BWITH BOTH URL AND BODY  but with post only it is also working 
+@app.route("/weatherapp",methods=["POST", "GET"])   # this meANS OK WORK BWITH BOTH URL AND BODY  but with post only it is also working , route me ohi dena hai jo form action me hoga
 
 # METHODS SHOULD ALWAYS in [] 
 
